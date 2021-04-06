@@ -14,6 +14,7 @@ Gameplay Walkthrough:
        - Pressing the pass button will account your score to 0 for that turn.
 
 Setup: 
+
     • 100 tiles in tile bag.
     • Each player draws 7 tile from the tile bag in the start of the game.
     • Tiles are scored based on scrabble_tiles.txt file located on the resource folder.

@@ -65,7 +65,6 @@ public class GridCell extends Cell{
                 this.setTile(assignedTile);
                 boardGUI.updateSelectedGridCells(this);
                 isSet = true;
-                manager.setPlay(true);
             }
             else if(constraint.equals("COL")){
                 boardGUI.updateSelectCount();
@@ -78,10 +77,9 @@ public class GridCell extends Cell{
                 this.setTile(assignedTile);
                 boardGUI.updateSelectedGridCells(this);
                 isSet = true;
-                manager.setPlay(true);
             }
         }
-        else if(!start && select && isFirstMove  && constraint.equals("ROW") && !(assignedVal == '-') ){
+        else if(!start && isFirstMove  && constraint.equals("ROW") && !(assignedVal == '-') ){
             boardGUI.updateSelectCount();
             manager.setFirstCell(this);
             manager.setIndexConstraint(row);
@@ -92,10 +90,8 @@ public class GridCell extends Cell{
             this.setTile(assignedTile);
             boardGUI.updateSelectedGridCells(this);
             isSet = true;
-            manager.setSelect(false);
-            manager.setPlay(true);
         }
-        else if(!start && select && isFirstMove && constraint.equals("COL") && !(assignedVal == '-')){
+        else if(!start && isFirstMove && constraint.equals("COL") && !(assignedVal == '-')){
             boardGUI.updateSelectCount();
             manager.setFirstCell(this);
             manager.setIndexConstraint(col);
@@ -106,8 +102,6 @@ public class GridCell extends Cell{
             this.setTile(assignedTile);
             boardGUI.updateSelectedGridCells(this);
             isSet = true;
-            manager.setSelect(false);
-            manager.setPlay(true);
         }
         else if(!start && !(assignedVal == '-')){
             if(constraint.equals("ROW") && (manager.getIndexConstraint() == row)){

@@ -1,25 +1,25 @@
-Gameplay Walkthrough:
+**Gameplay Walkthrough:**
 
-    1. Play: 
+    1. **Play:**
        - You must select the type of move you are going to play in every turn.
        - You can place tiles sequentially from top to bottom or left to right.
        - Click any tile on the player’s tray , and click on any cell in the scrabble grid to place the tile.
        - The play passes to computer if you make a valid move or if you pressed the pass button.
-    2. Exchange:
+    2. **Exchange:**
        - Press the exchange button to swap your tiles from the tile bag. You can only perform this action 2 times per game.
        - If the tile bag contains fewer than 7 tiles, pressing the exchange button will swap exactly the count of tiles remaining in the tile bag.
-    3. Pass:
+    3. **Pass:**
        - Press the pass button to pass the play to the next player.
        - If both players(human and computer), pass turns in succession, the game will end.
        - Pressing the pass button will account your score to 0 for that turn.
 
-Setup: 
+**Setup:**
 
     • 100 tiles in tile bag.
     • Each player draws 7 tile from the tile bag in the start of the game.
     • Tiles are scored based on scrabble_tiles.txt file located on the resource folder.
 
-Gameplay:
+**Gameplay:**
 
     1. The first player(human) combines two or more of his or her letters to form a word and places it on the board to read either across or down with one       letter on the center square. Diagonal words are not allowed.
 
@@ -38,7 +38,7 @@ Gameplay:
     8. The game ends when all letters have been drawn and one player uses his or her last letter; or when all possible plays have been made.
 
 
-Scoring:
+**Scoring:**
 
     1.  The score value of each letter is indicated by a number at the bottom of the tile. The score value of a blank is zero.
 

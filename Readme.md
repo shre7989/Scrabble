@@ -1,4 +1,5 @@
 Gameplay Walkthrough:
+
     1. Play: 
        - You must select the type of move you are going to play in every turn.
        - You can place tiles sequentially from top to bottom or left to right.
@@ -18,6 +19,7 @@ Setup:
     • Tiles are scored based on scrabble_tiles.txt file located on the resource folder.
 
 Gameplay:
+
     1. The first player(human) combines two or more of his or her letters to form a word and places it on the board to read either across or down with one       letter on the center square. Diagonal words are not allowed.
 
     2. Complete your turn by counting and announcing your score for that turn. Then draw as many new letters as you played; always keep seven tiles on your rack, as long as there are enough tiles left in the bag.
@@ -34,7 +36,9 @@ Gameplay:
 
     8. The game ends when all letters have been drawn and one player uses his or her last letter; or when all possible plays have been made.
 
+
 Scoring:
+
     1.  The score value of each letter is indicated by a number at the bottom of the tile. The score value of a blank is zero.
 
     2. The score for each turn is the sum of the letter values in each word(s) formed or modified on that turn, plus the additional points obtained from placing letters on Premium Squares.

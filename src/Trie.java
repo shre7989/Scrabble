@@ -7,6 +7,8 @@
 
 package scrabble;
 
+import java.util.Locale;
+
 /**
  * Trie - a prefix binary tree to store our dictionary words
  */
@@ -87,8 +89,8 @@ public class Trie {
     public void insert(String word){
         TrieNode curr = rootNode;
         int index;
-
-        for(char c: word.toCharArray()){
+        String lowerCaseWord = word.toLowerCase(Locale.ROOT);
+        for(char c: lowerCaseWord.toCharArray()){
             index = c - 'a';
             if(curr.dictionary[index] == null) curr.setChild(new TrieNode(),index);
             curr = curr.getChild(index);
